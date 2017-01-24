@@ -1,19 +1,29 @@
 @import "../variables";
 
+.preacher {
+    display: flex;
+    .admonition {
+        width: 68%;
+    }
+    form.subscribe {
+        width: 32%;
+    }
+}
+
 main.container {
     display: flex;
-    margin: 2em 10px;
+    margin: 2em 30px;
 }
 
 @media screen and (min-width: 1000px) {
     .post,
     .post-list {
-        width: 70%;
+        width: 68%;
     }
     .sidebar {
-        width: 30%;
+        width: 32%;
+        max-width: 420px; // Prevent Twitter timeline from applying a larger header
     }
-
 }
 
 @media screen and (max-width: 999px) and (min-width: 701px) {

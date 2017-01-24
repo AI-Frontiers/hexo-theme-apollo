@@ -1,8 +1,11 @@
 mixin sidebar()
     aside.sidebar
         .videos
+            .videos-heading
+                span
+                    | Speech Videos
             iframe(src="https://www.youtube.com/embed/yxuRnBEczUU",frameborder="0",allowfullscreen)
         .twitter-timeline
-            a(class="twitter-timeline",href="https://twitter.com/AI_Frontiers")
+            a(class="twitter-timeline",data-height="1000",href="https://twitter.com/AI_Frontiers")
                 | Tweets by AI_Frontiers
             script(async,src="//platform.twitter.com/widgets.js",charset="utf-8")
