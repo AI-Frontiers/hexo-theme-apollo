@@ -8,3 +8,15 @@ if ga
         | (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',
         != '"' + ga + '"'
         | ,'auto');ga('send','pageview');
+
+// slick carousel
+script(src=url_for("js/jquery.slim.min.js"))
+script(src=url_for("js/slick.min.js"))
+
+script(type='text/javascript').
+    $(document).ready(function(){$('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });})
+

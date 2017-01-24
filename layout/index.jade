@@ -1,8 +1,15 @@
 extends partial/layout
 
+block jumbotron
+    include mixins/jumbotron
+    +slick()
+    +preacher()
+
 block container
     include mixins/post
     +posts()
+    include mixins/sidebar
+    +sidebar()
 
 block pagination
     include mixins/paginator

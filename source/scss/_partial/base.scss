@@ -1,6 +1,8 @@
+@import "../variables";
+
 ::selection {
     color: #FFFFFF;
-    background-color: #42b983;
+    background-color: $c1;
 }
 
 html, body {
@@ -10,11 +12,11 @@ html, body {
 
 body {
     margin: 0;
-    color: #34495e;
+    color: #525252;
     font-size: 15px;
     line-height: 1.6;
     background-color: #fff;
-    font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 ul.nav,
@@ -29,14 +31,14 @@ ul {
 }
 
 a, a:active {
-    color: #2c3e50;
+    color: $c1;
     text-decoration: none;
 }
 
 a.nav-list-link.active,
 a.nav-list-link:hover,
 a.post-title-link:hover {
-    border-bottom: 2px solid #42b983;
+    border-bottom: 2px solid $c3;
 }
 
 hr {

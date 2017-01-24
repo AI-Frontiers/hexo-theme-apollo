@@ -1,3 +1,5 @@
+@import "../variables";
+
 .home.post-list {
     margin: 2em 0;
     .post-list-item {
@@ -17,7 +19,7 @@
             list-style: initial;
         }
     }
-    .read-more {     
-        color: #42b983;
+    .read-more {
+        color: $c3;
     }
 }

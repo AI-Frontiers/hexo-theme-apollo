@@ -1,14 +1,28 @@
+@import "../variables";
+
 main.container {
+    display: flex;
     margin: 2em 10px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
+    .post,
+    .post-list {
+        width: 70%;
+    }
+    .sidebar {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 999px) and (min-width: 701px) {
     .wrap {
-        width: 700px;
+        width: 100%;
         margin: 0 auto;
     }
-    header {
-        padding: 20px 100px;
+    .sidebar {
+        display: none;
     }
 }
 
@@ -16,17 +30,8 @@ main.container {
     .wrap {
         width: 100%;
     }
-    header {
-        padding: 20px 0;
-        a.logo-link,
-        ul.nav.nav-list {
-            float: none;
-            display: block;
-            text-align: center;
-        }
-        li.nav-list-item {
-            padding: 10px 10px;
-        }
+    .sidebar {
+        display: none;
     }
     main.container,
     .home.post-list,

@@ -1,17 +1,35 @@
+@import "../variables";
+
 header {
-    min-height: 60px;
+    background: $c0;
+    padding: 5px 0;
+    border-bottom: solid 2px $c3;
+    a.logo-link,
+    ul.nav.nav-list {
+        display: block;
+    }
+    li.nav-list-item {
+        padding: 10px 10px;
+        a {
+            color:#FFF;
+        }
+    }
+    min-height: 40px;
 
     .logo-link {
         float: left;
     }
-    
+
     .nav {
         float: right;
         left: 80px;
     }
 
     .logo-link img {
-        height: 60px;
+        height: 30px;
+        padding: 5px;
+        -webkit-filter: brightness(100);
+        filter: brightness(100);
     }
 
     .nav-list-item {
