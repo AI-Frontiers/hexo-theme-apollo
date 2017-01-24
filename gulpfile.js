@@ -11,10 +11,12 @@ gulp.task('sass', function() {
 });
 
 gulp.task('install', function() {
-  gulp.src('./node_modules/jquery/dist/jquery.slim.min.*')
+  gulp.src('./node_modules/jquery/dist/jquery*')
     .pipe(gulp.dest('./source/js'));
   gulp.src('./node_modules/slick-carousel/slick/slick.min.js')
     .pipe(gulp.dest('./source/js'));
+  gulp.src('./node_modules/slick-carousel/slick/slick-theme.scss')
+    .pipe(gulp.dest('./source/scss'));
   gulp.src('./node_modules/slick-carousel/slick/slick.scss')
     .pipe(gulp.dest('./source/scss'));
 });

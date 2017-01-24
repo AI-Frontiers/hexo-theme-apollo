@@ -10,13 +10,15 @@ if ga
         | ,'auto');ga('send','pageview');
 
 // slick carousel
-script(src=url_for("js/jquery.slim.min.js"))
+script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
+script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
 script(src=url_for("js/slick.min.js"))
 
 script(type='text/javascript').
     $(document).ready(function(){$('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      cssEase: 'linear',
     });})
 
