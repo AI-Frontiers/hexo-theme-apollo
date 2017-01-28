@@ -56,6 +56,11 @@
                 color: rgba(255,255,255,.8);
             }
             &:focus{
+                background: white;
+                color: #555;
+                &::placeholder {
+                    color: #ECECEC;
+                }
             }
         }
         input.button {

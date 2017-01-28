@@ -206,6 +206,12 @@
             font-size: 15px;
             input.email {
                 height: 40px;
+                &:focus {
+                    background: #ECECEC!important;
+                    &::placeholder {
+                        color: #CCC;
+                    }
+                }
             }
             input.button {
             }
