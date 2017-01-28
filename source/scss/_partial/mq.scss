@@ -24,19 +24,27 @@
         }
     }
 
-    .post,
-    .post-list {
+    .container-left {
+        margin-top: 1.2em;
         width: 68%;
     }
 
     // Wide: Post
     .post-block {
-        .post-title {
-            font-size: 2.2em;
-        }
         .post-info {
-            font-size: 18px;
+            font-size: 1em;
         }
+        .post-title {
+            font-size: 2em;
+            line-height: 1.2;
+            padding-bottom: .2em;
+        }
+    }
+    .container-left {
+        margin-top: 1.2em;
+    }
+    .post-list-item {
+        padding: 1.2em 0 2em;
     }
 
     .sidebar {
@@ -120,16 +128,23 @@
             }
         }
     }
-
     .container {
         margin: 0 40px;
     }
+    .container-left {
+        margin-top: 1.2em;
+    }
+    .post-list-item {
+        padding: 1.2em 0 2em;
+    }
     .post-block {
-        .post-title {
-            font-size: 2.2em;
-        }
         .post-info {
-            font-size: 18px;
+            font-size: 1em;
+        }
+        .post-title {
+            font-size: 2em;
+            line-height: 1.2;
+            padding-bottom: .2em;
         }
         .post-content {
             font-size: 16px;
@@ -198,7 +213,6 @@
     }
 
     main.container,
-    .home.post-list,
     .archive {
         margin-top: 0;
     }
@@ -207,23 +221,29 @@
     }
 
     // Mobile: Post
+    .container-left {
+        margin-top: 1.2em;
+    }
     .post-list {
+        width: 100%;
         .post-list-item {
-            padding: 10px 0 20px 0!important;
+            padding: 1em 0 1.2em 0;
         }
-        .post-block {
-            .post-title {
-                font-size: 24px;
-            }
-            .post-info {
-                font-size: 14px;
-            }
-            .post-content {
-                font-size: 14px;
-                h2, h3, h4, h5, h6 {
-                    max-width: 300px;
-                    left: 15px;
-                }
+    }
+
+    .post-block {
+        .post-title {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        .post-info {
+            font-size: 14px;
+        }
+        .post-content {
+            font-size: 14px;
+            h2, h3, h4, h5, h6 {
+                max-width: 300px;
+                left: 15px;
             }
         }
     }

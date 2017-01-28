@@ -6,6 +6,10 @@ mixin sidebar()
                     | Speech Videos
             iframe(src="https://www.youtube.com/embed/yxuRnBEczUU",frameborder="0",allowfullscreen)
         .twitter-timeline
-            a(class="twitter-timeline",data-height="1000",href="https://twitter.com/AI_Frontiers")
+            .twitter-heading
+                span
+                    | Twitter Timeline
+
+            a(class="twitter-timeline",data-height="1000",data-chrome="noheader nofooter", href="https://twitter.com/AI_Frontiers")
                 | Tweets by AI_Frontiers
             script(async,src="//platform.twitter.com/widgets.js",charset="utf-8")

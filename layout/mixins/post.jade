@@ -6,14 +6,17 @@ mixin postInfo(item)
 
 //- Index Page
 mixin posts()
-    ul.home.post-list
+    ul.home.post-list.container-left
         - page.posts.each(function (item) {
             li.post-list-item
                 article.post-block
+                    +postInfo(item)
                     h2.post-title
                         a.post-title-link(href= url_for(item.path))
                             != item.title
-                    +postInfo(item)
+                    if item.feature
+                        a.post-feature(href= url_for(item.path))
+                            img(src=item.feature)
                     .post-content
                         != item.content
                     //a.read-more(href= url_for(item.path))!= __('more')
@@ -38,10 +41,10 @@ mixin postList()
 
 //- Post Page
 mixin post(item)
-    .post
+    .post.container-left
         article.post-block
+            +postInfo(item)
             h1.post-title
                 != item.title
-            +postInfo(item)
             .post-content
                 != item.content

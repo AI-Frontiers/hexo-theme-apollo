@@ -3,16 +3,6 @@
 }
 
 .post-block {
-    .post-title {
-        margin: 0.65em 0 0;
-        color: $c1;
-        font-weight: normal;
-
-        a {
-            color: $c1;
-        }
-    }
-
     .post-info {
         color: $c3;
         span {
@@ -26,6 +16,23 @@
             color: white;
             background-color: #E36B6B;
         }
+    }
+    .post-title {
+        margin: 0;
+        color: $c1;
+        font-weight: normal;
+
+        a {
+            color: $c1;
+        }
+    }
+    .post-feature img {
+        width: 180px;
+        padding: 5px;
+        background: #FFF;
+        margin: 1em 1.5em 0 0;
+        float: left;
+        border: #EEE 2px solid;
     }
 
     .post-content {
