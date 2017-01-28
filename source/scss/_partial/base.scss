@@ -1,8 +1,11 @@
-@import "../variables";
-
 ::selection {
     color: #FFFFFF;
     background-color: $c1;
+}
+
+.unselectable {
+    pointer-events: none;
+    cursor: normal;
 }
 
 html, body {
@@ -12,33 +15,26 @@ html, body {
 
 body {
     margin: 0;
-    color: #525252;
+    color: #333;
     font-size: 15px;
     line-height: 1.6;
     background-color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
-ul.nav,
+ul.nav {
+    list-style-type: none;
+}
+
 ul.post-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-ul {
-    margin: 1rem 0;
-}
-
 a, a:active {
     color: $c1;
     text-decoration: none;
-}
-
-a.nav-list-link.active,
-a.nav-list-link:hover,
-a.post-title-link:hover {
-    border-bottom: 2px solid $c3;
 }
 
 hr {

@@ -9,16 +9,17 @@ if ga
         != '"' + ga + '"'
         | ,'auto');ga('send','pageview');
 
-// slick carousel
-script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
-script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
-script(src=url_for("js/slick.min.js"))
+script(type='text/javascript',src=url_for("vendor/jquery/jquery.min.js"))
+script(type='text/javascript',src=url_for("vendor/slick/slick.min.js"))
+script(type='text/javascript',src=url_for("vendor/slickNav/jquery.slicknav.min.js"))
 
 script(type='text/javascript').
-    $(document).ready(function(){$('.slider').slick({
-      infinite: true,
-      speed: 500,
-      autoplay: true,
-      cssEase: 'linear',
-    });})
-
+    $(document).ready(function(){
+        $('.slider').slick({
+            arrows: true
+        });
+        $('.nav').slicknav({
+            label:"",
+            appendTo: "header"
+        });
+    })

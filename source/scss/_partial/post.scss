@@ -1,24 +1,20 @@
-@import "../variables";
-
 .post {
     padding-top: 1em;
 }
 
 .post-block {
     .post-title {
-        margin: 0.65em 0;
-        color: $c0;
-        font-size: 2em;
+        margin: 0.65em 0 0;
+        color: $c1;
         font-weight: normal;
 
         a {
-            color: $c0;
+            color: $c1;
         }
     }
 
     .post-info {
-        color: #7f8c8d;
-        margin: 1.2em 0;
+        color: $c3;
         span {
             margin-left: 0.5rem;
         }
@@ -31,79 +27,79 @@
             background-color: #E36B6B;
         }
     }
-}
 
-.post-content {
-    h2, h3, h4, h5, h6 {
-        position: relative;
-        margin: 1em 0;
-        a:before {
-            content: "#";
-            color: $c3;
+    .post-content {
+        h2, h3, h4, h5, h6 {
+            position: relative;
+            margin: 1em 0;
+            a:before {
+                content: "#";
+                color: $c3;
+                position: absolute;
+                left: -0.7em;
+                top: -4px;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+        }
+        h4, h5, h6 {
+            a:before {
+                content: "";
+            }
+        }
+
+        h2, h3 {
+            font-size: 22px;
+        }
+
+        h4, h5, h6 {
+            font-size: 18px;
+        }
+        a {
+            word-break: break-all;
+        }
+        blockquote {
+            margin: 2em 0;
+            padding-left: 20px;
+            border-left: 4px solid $c3;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 1em auto;
+        }
+        & > table,
+        & > figure.highlight {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.125);
+        }
+        .tip {
+            position: relative;
+            margin: 2em 0;
+            padding: 12px 24px 12px 30px;
+            border-left: 4px solid #f66;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            background-color: #f8f8f8;
+            br {
+                display: none;
+            }
+        }
+        .tip:before {
             position: absolute;
-            left: -0.7em;
-            top: -4px;
-            font-size: 1.2em;
+            top: 14px;
+            left: -12px;
+            content: "!";
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            color: #fff;
+            font-size: 14px;
+            line-height: 20px;
             font-weight: bold;
+            text-align: center;
+            background-color: #f66;
+            font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
         }
-    }
-    h4, h5, h6 {
-        a:before {
-            content: "";
-        }
-    }
-
-    h2, h3 {
-        font-size: 22px;
-    }
-
-    h4, h5, h6 {
-        font-size: 18px;
-    }
-    a {
-        word-break: break-all;
-    }
-    blockquote {
-        margin: 2em 0;
-        padding-left: 20px;
-        border-left: 4px solid $c3;
-    }
-    img {
-        display: block;
-        max-width: 100%;
-        margin: 1em auto;
-    }
-    & > table,
-    & > figure.highlight {
-        box-shadow: 0 1px 2px rgba(0,0,0,0.125);
-    }
-    .tip {
-        position: relative;
-        margin: 2em 0;
-        padding: 12px 24px 12px 30px;
-        border-left: 4px solid #f66;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-        background-color: #f8f8f8;
-        br {
-            display: none;
-        }
-    }
-    .tip:before {
-        position: absolute;
-        top: 14px;
-        left: -12px;
-        content: "!";
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        color: #fff;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: bold;
-        text-align: center;
-        background-color: #f66;
-        font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
     }
 }
 

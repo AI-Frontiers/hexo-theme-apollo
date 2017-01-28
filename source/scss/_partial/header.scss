@@ -1,43 +1,51 @@
-@import "../variables";
-
 header {
     background: $c0;
-    padding: 5px 30px;
     border-bottom: solid 2px $c3;
-    a.logo-link,
-    ul.nav.nav-list {
-        display: block;
-    }
-    li.nav-list-item {
-        padding: 10px 10px;
-        a {
-            color:#FFF;
+    line-height: auto;
+
+    ul.nav {
+        float: right;
+        height: 100%;
+        flex-direction: row;
+        box-sizing: border-box;
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                color: white;
+            }
         }
     }
-    min-height: 40px;
 
-    .logo-link {
-        float: left;
-    }
-
-    .nav {
-        float: right;
-        left: 80px;
-    }
-
-    .logo-link img {
-        height: 30px;
-        padding: 5px;
-        -webkit-filter: brightness(100);
-        filter: brightness(100);
-    }
-
-    .nav-list-item {
-        display: inline-block;
-        padding: 19px  10px ;
-        a {
-            font-size: 16px;
-            line-height: 1.4;
+    .slicknav_menu {
+        // mobile menu, hidden by default
+        display: none;
+        padding: 0;
+        background: transparent;
+        top: 0;
+        right: 0;
+        .slicknav_btn {
+            margin: 0;
+            padding: 13px 11px;
+            background: transparent;
+        }
+        .slicknav_nav {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            z-index: 1000;
+            background: $c11;
+            .nav-list-item {
+                display: block;
+                a {
+                    text-align: center;
+                    &:hover {
+                        border-radius: 0;
+                        background: transparent;
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }

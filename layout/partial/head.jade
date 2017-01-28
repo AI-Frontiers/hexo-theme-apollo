@@ -9,9 +9,10 @@ block description
 
 meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="icon", href=url_for(theme.favicon))
+link(rel="stylesheet", href=url_for("vendor/slick/slick.css"))
+link(rel="stylesheet", href=url_for("vendor/slick/slick-theme.css"))
+link(rel="stylesheet", href=url_for("vendor/slickNav/slicknav.css"))
 link(rel="stylesheet", href=url_for("css/apollo.css"))
-link(rel="stylesheet", href=url_for("css/slick.css"))
-link(rel="stylesheet", href=url_for("css/slick-theme.css"))
 
 - var xml = config.url + '/atom.xml'
     link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)

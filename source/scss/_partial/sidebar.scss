@@ -1,14 +1,12 @@
-@import "../variables"
-
 aside.sidebar {
-    margin-left: 20px;
+    margin-left: 40px;
     .videos {
         display: block;
         .videos-heading {
             span{
                 display: block;
                 padding: 10px;
-                font-family: Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
+                font-family: Roboto, "Segoe UI", Calibri, sans-serif;
                 font-size: 21px;
                 font-weight: 300;
                 line-height: 24px;

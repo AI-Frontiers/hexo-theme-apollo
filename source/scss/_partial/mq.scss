@@ -1,48 +1,202 @@
-@import "../variables";
-
-.preacher {
-    display: flex;
-    .admonition {
-        width: 68%;
-    }
-    form.subscribe {
-        width: 32%;
-    }
-}
-
-main.container {
-    display: flex;
-    margin: 2em 30px;
-}
-
+// Wide
 @media screen and (min-width: 1000px) {
+    main.container {
+        display: flex;
+        margin: 2em 30px;
+    }
+
+    // Wide: Post
+    header {
+        padding: 0 20px;
+        height: 50px;
+        .logo-link {
+            position: absolute;
+            img {
+                height: 30px;
+                padding: 10px 0;
+            }
+        }
+
+        ul.nav {
+            li a {
+                padding: 13px 15px;
+            }
+        }
+    }
+
     .post,
     .post-list {
         width: 68%;
     }
+
+    // Wide: Post
+    .post-block {
+        .post-title {
+            font-size: 2.2em;
+        }
+        .post-info {
+            font-size: 18px;
+        }
+    }
+
     .sidebar {
+        margin: 2em 0 0 1em;
         width: 32%;
         max-width: 420px; // Prevent Twitter timeline from applying a larger header
     }
+
+    .preacher {
+        position: relative;
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-between;
+        .admonition {
+            font-size: 24px;
+            font-size: 24px;
+            padding: 0 20px;
+            line-height: 26px;
+        }
+        form.subscribe {
+            padding: 0 20px;
+            border-left: rgba(255,255,255,.5) 2px solid;
+            margin-left: 20px;
+            input.email {
+                min-width: 250px;
+                font-size: 14px;
+            }
+            input.button {
+                display: inline-block;
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 999px) and (min-width: 701px) {
+// Tablet View
+@media screen and (max-width: 999px) and (min-width: 481px) {
     .wrap {
         width: 100%;
         margin: 0 auto;
     }
+    header {
+        box-sizing: border-box;
+        padding: 0 20px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        .logo-link {
+            position: absolute;
+            img {
+                height: 25px;
+                padding: 5px 0;
+            }
+        }
+        ul.nav li a {
+            padding: 7px 10px;
+        }
+    }
     .sidebar {
         display: none;
+    }
+
+    // tablet preacaher
+    .preacher {
+        position: relative;
+        display: flex;
+        padding: 30px 0;
+        .admonition {
+            font-size: 24px;
+            padding: 0 20px;
+            border-right: rgba(255,255,255,.5) 2px solid;
+            margin-right: 20px;
+            line-height: 26px;
+        }
+        form.subscribe {
+            padding-right: 20px;
+            width: 100%;
+            height: 40px;
+            input.email {
+                width: 100%;
+                min-width: 150px;
+            }
+        }
+    }
+
+    .container {
+        margin: 0 40px;
+    }
+    .post-block {
+        .post-title {
+            font-size: 2.2em;
+        }
+        .post-info {
+            font-size: 18px;
+        }
+        .post-content {
+            font-size: 16px;
+        }
     }
 }
 
-@media screen and (max-width: 700px) {
+// Mobile view
+@media screen and (max-width: 480px) {
+
+    main.container {
+        display: flex;
+        margin: 1em 1em;
+    }
     .wrap {
         width: 100%;
+    }
+    header {
+        position: relative;
+        .logo-link {
+            position: absolute;
+            img {
+                height: 24px;
+                padding: 8px;
+            }
+        }
+        .slicknav_menu {
+            display: block;
+        }
+        ul.nav {
+            display: none;
+
+        }
     }
     .sidebar {
         display: none;
     }
+    .slider {
+        .slick-arrow {
+            display: none!important;
+        }
+    }
+    .preacher {
+        display: block;
+        overflow: hidden;
+        .admonition {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            padding: 8px 18px;
+            text-align: justify;
+        }
+        form.subscribe {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 15px;
+            input.email {
+                height: 40px;
+            }
+            input.button {
+            }
+        }
+    }
+
     main.container,
     .home.post-list,
     .archive {
@@ -51,12 +205,29 @@ main.container {
     .archive .post-item {
         padding-left: 20px;
     }
-    .post-content {
-        h2, h3, h4, h5, h6 {
-            max-width: 300px;
-            left: 15px;
+
+    // Mobile: Post
+    .post-list {
+        .post-list-item {
+            padding: 10px 0 20px 0!important;
+        }
+        .post-block {
+            .post-title {
+                font-size: 24px;
+            }
+            .post-info {
+                font-size: 14px;
+            }
+            .post-content {
+                font-size: 14px;
+                h2, h3, h4, h5, h6 {
+                    max-width: 300px;
+                    left: 15px;
+                }
+            }
         }
     }
+
     .ds-thread,
     #disqus_thread {
         margin: 2em 10px;

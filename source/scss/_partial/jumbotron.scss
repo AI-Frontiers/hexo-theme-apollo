@@ -1,60 +1,68 @@
-@import "../variables";
+.jumbotron {
+}
 
-$preacher-height: 50px;
-
+// Slider
 .slider {
+    width: 100%;
     overflow: hidden;
-    height: 250px;
+    height: 230px;
     img {
         width: 100%;
     }
+    .slick-prev {
+        margin-left: 40px;
+    }
+    .slick-next {
+        margin-right: 40px;
+    }
+    .slick-prev,
+    .slick-next {
+        z-index:999!important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color:white!important;
+    }
 }
 
+// Preacher
 .preacher {
-    background: $c3;
-    height: $preacher-height;
-    overflow: hidden;
-    padding: 0 30px;
+    background: $c11;
+    align-items: center;
     span.admonition {
         display: block;
-        font-family: OpenSansLight-Italic;
-        line-height: $preacher-height;
+        font-family: "Roboto Condensed";
+        font-style: italic;
         color: white;
-        font-size: 24px;
-        float: left;
-        padding-right: 30px;
     }
     form.subscribe {
-        margin-left: 20px;
-        position: flex;
-        display: block;
-        float: right;
-        height: 28px;
-        margin: calc((#{$preacher-height} - 28px) / 2) 5px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        input {
+            outline: 0;
+        }
         input.email {
-            float: left;
-            width: calc(100% - 120px);
-            height: calc(100% - 4px);
-            padding: 2px 6px;
-            font-family: OpenSans;
-            font-size: 14px;
-            border: 0;
-            background: rgba(255,255,255,.25);
-            color: white;
+            background: rgba(0,0,0,.05);
+            box-sizing: border-box;
+            padding: 0 15px;
+            width: 100%;
             transition: all .2s ease-out;
+            border: 0;
+            color: white;
             &::placeholder {
-                font-family: OpenSans-Italic;
-                color: rgba(255,255,255,.7);
+                color: rgba(255,255,255,.8);
             }
             &:focus{
-                background: white;
-                color: #333;
-                outline: 0;
             }
         }
         input.button {
-            float: right;
-            display: inline-block;
+            height: 40px;
+            font-family: "Roboto Condensed";
+            box-sizing: border-box;
+            box-sizing: border-box;
             padding: 4px 12px;
             border: 0;
             color: white;
