@@ -1,7 +1,12 @@
 header {
     background: $c0;
     border-bottom: solid 2px $c3;
+}
+.header-wrap {
+    height:100%;
+    box-sizing:border-box;
     line-height: auto;
+    margin: auto;
 
     ul.nav {
         float: right;

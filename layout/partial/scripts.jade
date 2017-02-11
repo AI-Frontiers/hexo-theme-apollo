@@ -17,11 +17,13 @@ script(type='text/javascript').
     $(document).ready(function(){
         // initialize slick slider
         $('.slider').slick({
-            arrows: true
+            arrows: true,
+            centerMode: true,
+            centerPadding: 0
         });
         $('.nav').slicknav({
             label:"",
-            appendTo: "header"
+            appendTo: ".header-wrap"
         });
         // initialize twitter timeline
         var twitterWidgetHeight = $('.container-left').height() - $('.videos').height();

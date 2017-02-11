@@ -3,9 +3,13 @@
 
 // Slider
 .slider {
+    .slide {
+        img {
+        }
+    }
     width: 100%;
     overflow: hidden;
-    height: 230px;
+    height: 390px;
     img {
         width: 100%;
     }

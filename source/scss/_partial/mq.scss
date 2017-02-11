@@ -14,8 +14,11 @@ $max-width: 1400px;
 
     // Wide: Post
     header {
-        padding: 0 20px;
         height: 50px;
+        .header-wrap {
+            max-width: $max-width;
+        padding: 0 20px;
+        }
         .logo-link {
             position: absolute;
             img {
@@ -194,6 +197,7 @@ $max-width: 1400px;
         display: none;
     }
     .slider {
+        height: 225px;
         .slick-arrow {
             display: none!important;
         }
