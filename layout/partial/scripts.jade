@@ -15,6 +15,7 @@ script(type='text/javascript',src=url_for("vendor/slickNav/jquery.slicknav.min.j
 
 script(type='text/javascript').
     $(document).ready(function(){
+        // initialize slick slider
         $('.slider').slick({
             arrows: true
         });
@@ -22,4 +23,22 @@ script(type='text/javascript').
             label:"",
             appendTo: "header"
         });
+        // initialize twitter timeline
+        var twitterWidgetHeight = $('.container-left').height() - $('.videos').height();
+        if (twitterWidgetHeight < 400) {
+            twitterWidgetHeight = 400;
+            }
+
+        $('.twitter-timeline').attr('data-height', twitterWidgetHeight);
+
+        loadScriptSync("//platform.twitter.com/widgets.js");
     })
+    function loadScriptSync (src) {
+        var s = document.createElement('script');
+        s.src = src;
+        s.type = "text/javascript";
+        s.async = false;                                 // <-- this is important
+        s.charset = "utf-8";
+        document.getElementsByTagName('head')[0].appendChild(s);
+    }
+

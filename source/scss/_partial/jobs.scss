@@ -1,0 +1,47 @@
+.jobs {
+    ul.job-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .job-list-item {
+            width: 50%;
+            list-style: none;
+        }
+    }
+}
+
+.job-block {
+    display: flex;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 16px 12px;
+    img.job-image {
+        width: 2.4em;
+        height: 2.4em;
+        padding: .2em;
+        margin-right: .4em;
+    }
+    .job-meta {
+        .job-title {
+            display: block;
+            color: #262626;
+            font-size: .85em;
+            line-height: 1em;
+            font-weight: bold;
+        }
+        .job-company {
+            display: block;
+            font-size: .75em;
+        }
+        .job-location {
+            display: block;
+            color: #737373;
+            font-size: .65em;
+        }
+        .job-description {
+            display: block;
+            color: #4c4c4c;
+            font-size: .65em;
+        }
+    }
+}

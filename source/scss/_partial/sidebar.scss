@@ -21,6 +21,10 @@ aside.sidebar {
             width: calc(100% - 20px);
         }
     }
+
+    .twitter-heading span {
+        border-bottom: 0;
+    }
     .twitter-timeline {
         iframe {
             height: 500px;

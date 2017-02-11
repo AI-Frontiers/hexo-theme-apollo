@@ -1,0 +1,19 @@
+//- Index Page
+mixin jobs()
+    .container-left.jobs
+        ul.job-list
+            - for (id in site.data.jobs) {
+                - var item = site.data.jobs[id];
+                li.job-list-item
+                    div.job-block
+                        img.job-image(src=url_for("images/"+item.image))
+                        div.job-meta
+                            span.job-title
+                                != item.title
+                            span.job-company
+                                != item.company
+                            span.job-location
+                                != item.location
+                            span.job-description
+                                != item.description
+            - }

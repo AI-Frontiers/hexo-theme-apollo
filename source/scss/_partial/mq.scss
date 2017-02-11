@@ -1,8 +1,15 @@
+
+$max-width: 1400px;
 // Wide
 @media screen and (min-width: 1000px) {
     main.container {
         display: flex;
-        margin: 2em 30px;
+        margin:auto;
+        margin-top: 2em;
+        max-width: $max-width;
+
+        width: calc(100% - 40px);
+        justify-content: space-between;
     }
 
     // Wide: Post
@@ -54,31 +61,35 @@
     }
 
     .preacher {
-        position: relative;
-        display: flex;
-        padding: 10px 0;
-        justify-content: space-between;
-        .admonition {
-            font-size: 24px;
-            font-size: 24px;
-            padding: 0 20px;
-            line-height: 26px;
-        }
-        form.subscribe {
-            padding: 0 20px;
-            border-left: rgba(255,255,255,.5) 2px solid;
-            margin-left: 20px;
-            input.email {
-                min-width: 250px;
-                font-size: 14px;
+        width: 100%;
+        .preacher-wrap {
+            position: relative;
+            max-width: $max-width;
+            margin: auto;
+            display: flex;
+            padding: 10px 0;
+            justify-content: space-between;
+            .admonition {
+                font-size: 24px;
+                font-size: 24px;
+                padding: 0 20px;
+                line-height: 26px;
             }
-            input.button {
-                display: inline-block;
+            form.subscribe {
+                padding: 0 20px;
+                border-left: rgba(255,255,255,.5) 2px solid;
+                margin-left: 20px;
+                input.email {
+                    min-width: 250px;
+                    font-size: 14px;
+                }
+                input.button {
+                    display: inline-block;
+                }
             }
         }
     }
 }
-
 // Tablet View
 @media screen and (max-width: 999px) and (min-width: 481px) {
     .wrap {
@@ -107,7 +118,7 @@
     }
 
     // tablet preacaher
-    .preacher {
+    .preacher-wrap {
         position: relative;
         display: flex;
         padding: 30px 0;
@@ -188,32 +199,32 @@
         }
     }
     .preacher {
-        display: block;
-        overflow: hidden;
-        .admonition {
+        .preacher-wrap {
             display: block;
-            box-sizing: border-box;
-            width: 100%;
-            font-size: 20px;
-            line-height: 26px;
-            margin-bottom: 10px;
-            padding: 8px 18px;
-            text-align: justify;
-        }
-        form.subscribe {
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 15px;
-            input.email {
-                height: 40px;
-                &:focus {
-                    background: #ECECEC!important;
-                    &::placeholder {
-                        color: #CCC;
+            overflow: hidden;
+            .admonition {
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 10px;
+                padding: 8px 18px;
+                text-align: justify;
+            }
+            form.subscribe {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 15px;
+                input.email {
+                    height: 40px;
+                    &:focus {
+                        background: #ECECEC!important;
+                        &::placeholder {
+                            color: #CCC;
+                        }
                     }
                 }
-            }
-            input.button {
             }
         }
     }
