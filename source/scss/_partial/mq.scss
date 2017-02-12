@@ -91,6 +91,9 @@ $max-width: 1400px;
             }
         }
     }
+    .jobs .job-list-item {
+        width: 33%;
+    }
 }
 // Tablet View
 @media screen and (max-width: 999px) and (min-width: 481px) {
@@ -166,6 +169,9 @@ $max-width: 1400px;
         .post-content {
             font-size: 16px;
         }
+    }
+    .jobs .job-list-item {
+        width: 50%;
     }
 }
 
