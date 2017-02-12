@@ -18,7 +18,7 @@ hexo init Blog
 cd Blog 
 npm install
 npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+git clone https://github.com/AI-Frontiers/hexo-theme-apollo.git themes/apollo
 ```
 
 ## 启用
