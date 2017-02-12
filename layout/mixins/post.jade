@@ -17,7 +17,7 @@ mixin posts()
                     if item.feature
                         if item.feature.substring(0,8).toLowerCase() == "youtube/"
                             a.post-feature
-                                iframe(src="//www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen="")
+                                iframe(src="//www.youtube.com/embed/"+ item.feature.substring(8),frameborder="0",allowfullscreen="")
                         else
                             a.post-feature(href= url_for(item.path))
                                 img(src=item.feature)
