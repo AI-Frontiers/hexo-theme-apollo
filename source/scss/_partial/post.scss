@@ -31,13 +31,18 @@
             color: $c1;
         }
     }
-    .post-feature img {
+    .post-feature img, .post-feature iframe {
         width: 180px;
         padding: 5px;
         background: #FFF;
-        margin: 1em 1.5em 0 0;
+        margin: 1em 1.5em .5em 0;
         float: left;
         border: #EEE 2px solid;
+    }
+
+    .post-feature iframe {
+        width: 272px;
+        height: 153px;
     }
 
     .post-content {

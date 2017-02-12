@@ -15,8 +15,12 @@ mixin posts()
                         a.post-title-link(href= url_for(item.path))
                             != item.title
                     if item.feature
-                        a.post-feature(href= url_for(item.path))
-                            img(src="images/"+item.feature)
+                        if item.feature.substring(0,8).toLowerCase() == "youtube/"
+                            a.post-feature
+                                iframe(src="//www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen="")
+                        else
+                            a.post-feature(href= url_for(item.path))
+                                img(src=item.feature)
                     .post-content
                         != item.content
                     //a.read-more(href= url_for(item.path))!= __('more')
