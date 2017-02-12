@@ -98,25 +98,27 @@ $max-width: 1400px;
         width: 100%;
         margin: 0 auto;
     }
+
     header {
-        box-sizing: border-box;
-        padding: 0 20px;
-        overflow: hidden;
-        position: relative;
         .header-wrap {
-            height: 50px;
+            max-width: $max-width;
+            padding: 0 20px;
         }
         .logo-link {
             position: absolute;
             img {
-                height: 26px;
-                padding: 11px 0;
+                height: 30px;
+                padding: 10px 0;
             }
         }
-        ul.nav li a {
-            padding: 7px 10px;
+
+        ul.nav {
+            li a {
+                padding: 13px 15px;
+            }
         }
     }
+
     .sidebar {
         display: none;
     }
