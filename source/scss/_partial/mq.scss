@@ -14,7 +14,6 @@ $max-width: 1400px;
 
     // Wide: Post
     header {
-        height: 50px;
         .header-wrap {
             max-width: $max-width;
             padding: 0 20px;
@@ -102,14 +101,16 @@ $max-width: 1400px;
     header {
         box-sizing: border-box;
         padding: 0 20px;
-        height: 40px;
         overflow: hidden;
         position: relative;
+        .header-wrap {
+            height: 50px;
+        }
         .logo-link {
             position: absolute;
             img {
-                height: 25px;
-                padding: 5px 0;
+                height: 26px;
+                padding: 11px 0;
             }
         }
         ul.nav li a {
@@ -176,13 +177,13 @@ $max-width: 1400px;
     .wrap {
         width: 100%;
     }
-    header {
+    .header-wrap {
         position: relative;
         .logo-link {
             position: absolute;
             img {
-                height: 24px;
-                padding: 8px;
+                height: 26px;
+                padding: 11px;
             }
         }
         .slicknav_menu {
