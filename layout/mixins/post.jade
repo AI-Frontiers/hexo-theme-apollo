@@ -50,5 +50,13 @@ mixin post(item)
             +postInfo(item)
             h1.post-title
                 != item.title
+
+            if item.feature
+                if item.feature.substring(0,8).toLowerCase() == "youtube/"
+                    .post-feature
+                        iframe(src="//www.youtube.com/embed/"+ item.feature.substring(8),frameborder="0",allowfullscreen="")
+                else
+                    .post-feature
+                        img(src="/" + item.feature)
             .post-content
                 != item.content
