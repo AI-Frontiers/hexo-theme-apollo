@@ -20,7 +20,7 @@ mixin posts()
                                 iframe(src="//www.youtube.com/embed/"+ item.feature.substring(8),frameborder="0",allowfullscreen="")
                         else
                             a.post-feature(href= url_for(item.path))
-                                img(src=item.feature)
+                                img(src="/" + item.feature)
                     .post-content
                         != item.content
                     //a.read-more(href= url_for(item.path))!= __('more')
