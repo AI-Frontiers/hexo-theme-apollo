@@ -1,13 +1,5 @@
 aside.sidebar {
     margin-left: 40px;
-    .videos {
-        display: block;
-        iframe {
-            width: calc(100% - 20px);
-            height: 220px;
-        }
-    }
-    .videos-heading,
     .twitter-heading {
         span{
             display: block;

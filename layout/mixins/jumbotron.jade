@@ -7,6 +7,10 @@ mixin slider()
         .slide
             img(data-lazy=url_for("images/slide-3.jpg"))
 
+mixin videos()
+    .videos
+        iframe(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
+
 mixin preacher()
     div.preacher
         .preacher-wrap

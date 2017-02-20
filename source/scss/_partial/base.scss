@@ -4,6 +4,7 @@
 }
 
 .unselectable {
+    user-select: none;
     pointer-events: none;
     cursor: normal;
 }
