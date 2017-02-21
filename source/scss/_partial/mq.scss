@@ -111,7 +111,7 @@ $max-width: 1400px;
     }
 }
 // Tablet View
-@media screen and (max-width: 999px) and (min-width: 481px) {
+@media screen and (max-width: 999px) and (min-width: 701px) {
     .wrap {
         width: 100%;
         margin: 0 auto;
@@ -214,7 +214,7 @@ $max-width: 1400px;
 }
 
 // Mobile view
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
 
     .videos {
         flex-direction: column;
