@@ -66,6 +66,7 @@ $max-width: 1400px;
             border-left: $c11 5px solid;
             font-size: 30px;
             padding-left: 15px;
+            text-shadow: 0px 2px 1px rgba(0,0,0,.6);
         }
         .videos-wrap {
             max-width: $max-width!important;
@@ -85,7 +86,7 @@ $max-width: 1400px;
 
     .preacher {
         width: 100%;
-
+        padding: 8px 0;
     }
     .preacher-wrap {
         position: relative;

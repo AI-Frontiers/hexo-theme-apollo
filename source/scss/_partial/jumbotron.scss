@@ -1,4 +1,6 @@
 .jumbotron {
+    background: $c02;
+    background-image: $circuit-pattern;
 }
 
 // Videos
@@ -6,7 +8,6 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    background: $c02;
     justify-content: space-around;
     align-items: center;
 
@@ -49,7 +50,8 @@
 
 // Preacher
 .preacher {
-    background: $c11;
+    background: $c02;
+    opacity: .8;
 }
 .preacher-wrap {
     align-items: center;
@@ -68,7 +70,7 @@
             outline: 0;
         }
         input.email {
-            background: rgba(0,0,0,.05);
+            background: $c11;
             box-sizing: border-box;
             padding: 0 15px;
             width: 100%;
