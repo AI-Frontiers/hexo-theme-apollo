@@ -46,6 +46,12 @@
     }
 
     .post-content {
+        a {
+            text-decoration: underline!important;
+        }
+        a:hover {
+            color: $c01;
+        }
         h2, h3, h4, h5, h6 {
             position: relative;
             margin: 1em 0;
