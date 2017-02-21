@@ -1,10 +1,9 @@
-
 $max-width: 1400px;
 // Wide
 @media screen and (min-width: 1000px) {
     main.container {
         display: flex;
-        margin:auto;
+        margin: auto;
         margin-top: 2em;
         max-width: $max-width;
 
@@ -38,7 +37,6 @@ $max-width: 1400px;
         width: 68%;
     }
 
-    // Wide: Post
     .post-block {
         .post-info {
             font-size: 1em;
@@ -62,37 +60,53 @@ $max-width: 1400px;
         max-width: 420px; // Prevent Twitter timeline from applying a larger header
     }
 
-    .preacher {
-        width: 100%;
-        .preacher-wrap {
-            position: relative;
-            max-width: $max-width;
-            margin: auto;
+    .videos {
+        .videos-heading {
+            width: 15%;
+            border-left: $c11 5px solid;
+            font-size: 30px;
+            padding-left: 15px;
+        }
+        .videos-wrap {
+            max-width: $max-width!important;
             display: flex;
-            padding: 10px 0;
-            justify-content: space-between;
-            .admonition {
-                font-size: 24px;
-                font-size: 24px;
-                padding: 0 20px;
-                line-height: 26px;
-            }
-            form.subscribe {
-                padding: 0 20px;
-                border-left: rgba(255,255,255,.5) 2px solid;
-                margin-left: 20px;
-                input.email {
-                    min-width: 250px;
-                    font-size: 14px;
-                }
-                input.button {
-                    display: inline-block;
-                }
+            width: 70%;
+            align-items: center;
+            flex-direction: row;
+            height: 330px;
+            justify-content: space-around;
+            iframe {
+                width: 620px;
+                height: 280px;
+                max-width: 45%;
             }
         }
     }
-    .jobs .job-list-item {
-        width: 33%;
+
+    .preacher {
+        width: 100%;
+
+    }
+    .preacher-wrap {
+        position: relative;
+        max-width: 720px;
+        display: flex;
+        padding: 20px 0 30px;
+        margin: auto;
+        flex-direction: column;
+        .admonition {
+            font-size: 24px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+        form.subscribe {
+            width: 640px;
+            height: 40px;
+            input.email {
+                width: 100%;
+                min-width: 150px;
+            }
+        }
     }
 }
 // Tablet View
@@ -100,6 +114,29 @@ $max-width: 1400px;
     .wrap {
         width: 100%;
         margin: 0 auto;
+    }
+    .videos {
+        .videos-heading {
+            border-left: $c11 5px solid;
+            padding-left: 15px;
+            width: 18%;
+            font-size: 28px;
+        }
+        .videos-wrap {
+            width: 70%;
+            align-items: center;
+            flex-direction: row;
+            height: 330px;
+            justify-content: space-around;
+            iframe {
+                width: 620px;
+                height: 280px;
+                max-width: 90%;
+            }
+        }
+        #video2 {
+            display: none;
+        }
     }
 
     header {
@@ -144,11 +181,18 @@ $max-width: 1400px;
             }
         }
     }
+
     .container {
+        display: flex;
         margin: 0 40px;
     }
     .container-left {
+        width: 68%;
         margin-top: 1.2em;
+    }
+
+    .sidebar {
+        width: 32%;
     }
     .post-list-item {
         padding: 1.2em 0 2em;
@@ -166,13 +210,23 @@ $max-width: 1400px;
             font-size: 16px;
         }
     }
-    .jobs .job-list-item {
-        width: 50%;
-    }
 }
 
 // Mobile view
 @media screen and (max-width: 480px) {
+
+    .videos {
+        flex-direction: column;
+    }
+    .videos-heading {
+        width: 80%;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom:0;
+    }
+    #video2 {
+        display: none;
+    }
 
     main.container {
         display: flex;
@@ -219,7 +273,6 @@ $max-width: 1400px;
                 line-height: 26px;
                 margin-bottom: 10px;
                 padding: 8px 18px;
-                text-align: justify;
             }
             form.subscribe {
                 width: 100%;
@@ -272,9 +325,6 @@ $max-width: 1400px;
                 left: 15px;
             }
         }
-    }
-    .jobs .job-list-item {
-        width: 100%;
     }
 
     .ds-thread,

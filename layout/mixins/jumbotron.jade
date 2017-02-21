@@ -9,8 +9,19 @@ mixin slider()
 
 mixin videos()
     .videos
-        iframe(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
-        iframe(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
+        h2.videos-heading
+            | Watch speeches from our previous conference.
+        .videos-wrap
+            - var speeches = site.data.speeches
+            - var len = Object.keys(speeches).length
+            - var m = Math.floor(Math.random()*len)
+            - var n = Math.floor(Math.random()*len)
+            - while(n == m) {
+            -   n = Math.floor(Math.random()*len)
+            - }
+            iframe#video1(src="https://www.youtube.com/embed/"+speeches[m].id,frameborder="0",allowfullscreen)
+            iframe#video2(src="https://www.youtube.com/embed/"+speeches[n].id,frameborder="0",allowfullscreen)
+
 
 mixin preacher()
     div.preacher
