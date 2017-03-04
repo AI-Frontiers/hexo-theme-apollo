@@ -1,7 +1,7 @@
 {
   "name": "hexo-theme-apollo",
   "version": "1.0.0",
-  "description": "A hexo theme inspired by vuejs.org",
+  "description": "The hexo theme for AI Frontiers conference blog",
   "main": "index.js",
   "scripts": {
     "sass": "gulp sass"

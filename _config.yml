@@ -15,13 +15,12 @@ favicon: /images/favicon.png
 logo: /images/logo.png
 
 # Comment
-# e.g disqus: seansun
 disqus:
 duoshuo:
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+#ga:
 
 # Copyright Infomation
 startyear: 2016
