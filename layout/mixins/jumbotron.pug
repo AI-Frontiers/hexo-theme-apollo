@@ -5,12 +5,17 @@ mixin videos()
         h2.videos-heading
             | Watch speeches from our previous conference.
         .slider
-            .slide
-                iframe(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
-                iframe(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
-            .slide
-                iframe(src="https://www.youtube.com/embed/mSE3QI8iPTI",frameborder="0",allowfullscreen)
-                iframe(src="https://www.youtube.com/embed/mSE3QI8iPTI",frameborder="0",allowfullscreen)
+            - var tmpId;
+            - for (i in site.data.speeches) {
+                - var item = site.data.speeches[i];
+                - if (i % 2 == 0) {
+                    - tmpId = item.id;
+                - } else {
+                    .slide
+                        iframe(src="https://www.youtube.com/embed/" + tmpId,frameborder="0",allowfullscreen)
+                        iframe(src="https://www.youtube.com/embed/" + item.id,frameborder="0",allowfullscreen)
+                - }
+            - }
 
 
 mixin subscribe()
