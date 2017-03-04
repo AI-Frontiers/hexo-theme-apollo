@@ -1,0 +1,21 @@
+.paginator {
+    margin: 4em 0;
+    text-align: center;
+    .prev, .next {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 4px 12px;
+        border-bottom: 4px solid $c11;
+        font-size: 14px;
+        color: #fff;
+        background-color: $c01;
+        &:hover {
+            background-color: $c03;
+        }
+    }
+}
+
+.ds-thread,
+#disqus_thread {
+    margin-bottom: 2em;
+}

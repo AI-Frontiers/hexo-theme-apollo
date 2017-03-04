@@ -1,0 +1,21 @@
+.home.post-list {
+    .post-list-item {
+        border-bottom: 1px solid #ddd;
+        &:last-child {
+            border-bottom: 0px;
+        }
+    }
+    .post-content{
+        h2, h3, h4, h5, h6 {
+            &:before {
+                content: '';
+            }
+        }
+        & > ul {
+            list-style: circle;
+        }
+    }
+    .read-more {
+        color: $c3;
+    }
+}

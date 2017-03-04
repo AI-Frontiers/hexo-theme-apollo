@@ -1,0 +1,102 @@
+.jumbotron {
+    background: $c02;
+    background-image: $circuit-pattern;
+}
+
+// Videos
+.videos {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+
+    .videos-heading {
+        color: #F2F2F2;
+        font-family: "Roboto Condensed";
+        text-transform: uppercase;
+    }
+
+    .videos-wrap {
+        display: flex;
+        iframe {
+            border: rgba(256,256,256, .1) 5px solid;
+        }
+    }
+}
+// Slider
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 390px;
+    img {
+        width: 100%;
+    }
+    .slick-prev {
+        margin-left: 40px;
+    }
+    .slick-next {
+        margin-right: 40px;
+    }
+    .slick-prev,
+    .slick-next {
+        z-index:999!important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color:white!important;
+    }
+}
+
+// Preacher
+.preacher {
+    background: $c02;
+    opacity: .8;
+}
+.preacher-wrap {
+    align-items: center;
+    span.admonition {
+        display: block;
+        font-family: "Roboto Condensed";
+        color: white;
+    }
+    form.subscribe {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        input {
+            outline: 0;
+        }
+        input.email {
+            background: $c11;
+            box-sizing: border-box;
+            padding: 0 15px;
+            width: 100%;
+            transition: all .2s ease-out;
+            border: 0;
+            color: white;
+            &::placeholder {
+                color: rgba(255,255,255,.8);
+            }
+            &:focus{
+                background: white;
+                color: #555;
+                &::placeholder {
+                    color: #ECECEC;
+                }
+            }
+        }
+        input.button {
+            height: 40px;
+            font-family: "Roboto Condensed";
+            box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 4px 12px;
+            border: 0;
+            color: white;
+            background: $c1;
+        }
+    }
+}

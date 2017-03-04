@@ -1,0 +1,25 @@
+aside.sidebar {
+    margin-left: 40px;
+    .twitter-heading {
+        span{
+            display: block;
+            padding: 10px;
+            font-family: Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            line-height: 24px;
+            color: $c00;
+            border-bottom: 1px solid rgba(15,70,100,.12);
+            width: calc(100% - 20px);
+        }
+    }
+
+    .twitter-heading span {
+        border-bottom: 0;
+    }
+    .twitter-timeline {
+        iframe {
+            height: 500px;
+        }
+    }
+}
