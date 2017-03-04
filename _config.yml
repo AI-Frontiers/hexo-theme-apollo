@@ -7,8 +7,8 @@ menu_main:
     #Rss: /atom.xml
 
 menu_sub:
-    "About us": /about-us
-    "Contact us": /contact-us
+    "About us": /about
+    "Contact us": /contact
     #Rss: /atom.xml
 
 favicon: /images/favicon.png

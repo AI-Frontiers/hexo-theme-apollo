@@ -6,6 +6,10 @@
     display: none;
 }
 
+.container {
+    min-height: calc(100vh - 208px);  // 208px stands for the height of header & fooder
+}
+
 .post-block {
     overflow: hidden;
     .post-info {
