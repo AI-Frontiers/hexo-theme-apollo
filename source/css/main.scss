@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 @import "variables";
-@import "_partial/normalize";
+@import "normalize";
 @import "_partial/base";
 @import "_partial/patterns";
 @import "_partial/header";
-@import "_partial/home-post-list";
+@import "_partial/post-list";
 @import "_partial/post";
 @import "_partial/jobs";
 @import "_partial/footer";

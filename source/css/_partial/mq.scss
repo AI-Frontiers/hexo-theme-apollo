@@ -68,7 +68,7 @@ $max-width: 1400px;
             padding-left: 15px;
             text-shadow: 0px 2px 1px rgba(0,0,0,.6);
         }
-        .videos-wrap {
+        .slider {
             max-width: $max-width!important;
             display: flex;
             width: 70%;
@@ -94,7 +94,7 @@ $max-width: 1400px;
         display: flex;
         padding: 10px 0;
         margin: auto;
-        .admonition {
+        .quote {
             width: 370px;
             font-size: 24px;
             padding: 0 20px;
@@ -126,7 +126,7 @@ $max-width: 1400px;
             width: 18%;
             font-size: 28px;
         }
-        .videos-wrap {
+        .slider {
             width: 70%;
             align-items: center;
             flex-direction: row;
@@ -173,7 +173,7 @@ $max-width: 1400px;
         display: flex;
         padding: 10px 0;
         margin: auto;
-        .admonition {
+        .quote {
             width: 370px;
             font-size: 24px;
             padding: 0 20px;
@@ -275,7 +275,7 @@ $max-width: 1400px;
         .subscribe-wrap {
             display: block;
             overflow: hidden;
-            .admonition {
+            .quote {
                 display: block;
                 text-align: center;
                 box-sizing: border-box;
