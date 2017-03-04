@@ -4,7 +4,6 @@
   "description": "The hexo theme for AI Frontiers conference blog",
   "main": "index.js",
   "scripts": {
-    "sass": "gulp sass"
   },
   "repository": {
     "type": "git",
@@ -22,11 +21,7 @@
   },
   "homepage": "https://github.com/AI-Frontiers/hexo-theme-apollo#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-sass": "^2.0.4"
   },
   "dependencies": {
-    "slick-carousel": "^1.6.0"
   }
 }
