@@ -26,6 +26,19 @@ mixin posts()
                     //a.read-more(href= url_for(item.path))!= __('more')
         - })
 
+//- About & Contact Page
+mixin simplePage()
+    .post.container-left
+        article.post-block
+            +postInfo(item)
+            h1.post-title
+                != item.title
+            if item.feature
+                .post-feature
+                    img(src="/" + item.feature)
+            .post-content
+                != item.content
+
 //- Archive Page
 mixin postList()
     .archive

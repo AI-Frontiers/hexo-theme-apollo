@@ -32,8 +32,10 @@ $max-width: 1400px;
         }
     }
 
+    .container {
+        margin-top: 5px!important;
+    }
     .container-left {
-        margin-top: 1.2em;
         width: 60%;
     }
 
@@ -47,15 +49,13 @@ $max-width: 1400px;
             padding-bottom: .2em;
         }
     }
-    .container-left {
-        margin-top: 1.2em;
-    }
     .post-list-item {
         padding: 1.2em 0 2em;
     }
 
     .sidebar {
-        margin: 2em 0 0 1em;
+        padding-top: 18px;
+        margin: 0 0 0 1em;
         width: 40%;
         max-width: 420px; // Prevent Twitter timeline from applying a larger header
     }
@@ -86,22 +86,25 @@ $max-width: 1400px;
 
     .preacher {
         width: 100%;
-        padding: 8px 0;
     }
+
     .preacher-wrap {
+        width: 850px;
         position: relative;
-        max-width: 720px;
         display: flex;
-        padding: 20px 0 30px;
+        padding: 10px 0;
         margin: auto;
-        flex-direction: column;
         .admonition {
+            width: 370px;
             font-size: 24px;
+            padding: 0 20px;
+            border-right: rgba(255,255,255,.5) 2px solid;
+            margin-right: 20px;
             line-height: 26px;
-            margin-bottom: 20px;
         }
         form.subscribe {
-            width: 640px;
+            padding-right: 20px;
+            width: 50%;
             height: 40px;
             input.email {
                 width: 100%;
@@ -160,12 +163,18 @@ $max-width: 1400px;
         }
     }
 
-    // tablet preacaher
+    .preacher {
+        width: 100%;
+    }
+
     .preacher-wrap {
+        width: 850px;
         position: relative;
         display: flex;
-        padding: 30px 0;
+        padding: 10px 0;
+        margin: auto;
         .admonition {
+            width: 370px;
             font-size: 24px;
             padding: 0 20px;
             border-right: rgba(255,255,255,.5) 2px solid;
@@ -174,7 +183,7 @@ $max-width: 1400px;
         }
         form.subscribe {
             padding-right: 20px;
-            width: 100%;
+            width: 50%;
             height: 40px;
             input.email {
                 width: 100%;
@@ -189,10 +198,10 @@ $max-width: 1400px;
     }
     .container-left {
         width: 60%;
-        margin-top: 1.2em;
     }
 
     .sidebar {
+        padding-top: 18px;
         width: 40%;
     }
     .post-list-item {
@@ -268,12 +277,13 @@ $max-width: 1400px;
             overflow: hidden;
             .admonition {
                 display: block;
+                text-align: center;
                 box-sizing: border-box;
                 width: 100%;
                 font-size: 20px;
                 line-height: 26px;
                 margin-bottom: 10px;
-                padding: 8px 18px;
+                padding: 8px 18px 0;
             }
             form.subscribe {
                 width: 100%;
@@ -302,7 +312,7 @@ $max-width: 1400px;
 
     // Mobile: Post
     .container-left {
-        margin-top: 1.2em;
+        margin-top: 18px;
     }
     .post-list {
         width: 100%;

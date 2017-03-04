@@ -1,7 +1,11 @@
 mixin slider()
     .slider
+        h2.videos-heading
+            | Watch speeches from our previous conference.
         .slide
-            img(data-lazy=url_for("images/slide-1.jpg"))
+            .videos-wrap
+                iframe#video1(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
+                iframe#video2(src="https://www.youtube.com/embed/mSE3QI8iPTI",frameborder="0",allowfullscreen)
         .slide
             img(data-lazy=url_for("images/slide-2.jpg"))
         .slide

@@ -7,9 +7,7 @@ header {
     box-sizing:border-box;
     line-height: auto;
     margin: auto;
-
     ul.nav {
-        float: right;
         height: 100%;
         flex-direction: row;
         box-sizing: border-box;
@@ -21,6 +19,13 @@ header {
                 color: white;
             }
         }
+    }
+    ul.nav-main {
+        float: left;
+        margin-left: 130px;
+    }
+    ul.nav-sub {
+        float: right;
     }
 
     .slicknav_menu {
