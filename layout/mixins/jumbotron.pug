@@ -1,32 +1,19 @@
-mixin slider()
-    .slider
-        h2.videos-heading
-            | Watch speeches from our previous conference.
-        .slide
-            .videos-wrap
-                iframe#video1(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
-                iframe#video2(src="https://www.youtube.com/embed/mSE3QI8iPTI",frameborder="0",allowfullscreen)
-        .slide
-            img(data-lazy=url_for("images/slide-2.jpg"))
-        .slide
-            img(data-lazy=url_for("images/slide-3.jpg"))
-
 mixin videos()
     .videos
         h2.videos-heading
-            | Watch speeches from our previous conference.
+            | #{theme.quote}
         .videos-wrap
             iframe#video1(src="https://www.youtube.com/embed/jCB_z7SDo1c",frameborder="0",allowfullscreen)
             iframe#video2(src="https://www.youtube.com/embed/mSE3QI8iPTI",frameborder="0",allowfullscreen)
 
 
-mixin preacher()
-    div.preacher
-        .preacher-wrap
+mixin subscribe()
+    div.subscribe
+        .subscribe-wrap
             span.admonition.unselectable
                 | #{theme.quote}
 
-            form.subscribe(action="//AIFrontiers.us14.list-manage.com/subscribe/post?u=de145912b09007eeae1b898e9&amp;id=c9295d15d9",method="post",id="mc-embedded-subscribe-form",name="mc-embedded-subscribe-form",class="validate",target="_blank",novalidate)
+            form.subscribe-form(action="//AIFrontiers.us14.list-manage.com/subscribe/post?u=de145912b09007eeae1b898e9&amp;id=c9295d15d9",method="post",id="mc-embedded-subscribe-form",name="mc-embedded-subscribe-form",class="validate",target="_blank",novalidate)
                 input.email(placeholder="Enter your email",type="email",value="",name="EMAIL",required,id="mce-EMAIL")
                 div(id="mce-responses",style="display:none")
                     div(class="response",id="mce-error-response",style="display:none")

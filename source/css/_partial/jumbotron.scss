@@ -48,22 +48,19 @@
     }
 }
 
-// Preacher
-.preacher {
+// subscribe
+.subscribe {
     background: $c02;
     opacity: .8;
 }
-.preacher-wrap {
+.subscribe-wrap {
     align-items: center;
     span.admonition {
         display: block;
         font-family: "Roboto Condensed";
         color: white;
     }
-    form.subscribe {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
+    form.subscribe-form {
         display: flex;
         flex-direction: row;
         input {
