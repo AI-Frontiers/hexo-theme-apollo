@@ -1,0 +1,11 @@
+//- Post Page
+mixin about(item)
+    .post.container-left
+        article.post-block
+            h1.post-title
+                != item.title
+            if item.feature
+                .post-feature
+                    img(src="/" + item.feature)
+            .post-content
+                != item.content
