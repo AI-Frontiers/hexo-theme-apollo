@@ -1,8 +1,14 @@
-menu:
-    Blog: /
+menu_main:
     #Jobs: /jobs
     #Archive: /archives/
-    2017: https://www.aifrontiers.com/2017
+    "2017 conference": https://www.aifrontiers.com/2017
+    Videos: https://www.youtube.com/playlist?list=PLnESksJKWdhg4EDJOjvqAizhgz3XCnCuU
+    Slides: https://www.slideshare.net/AIFrontiers/presentations
+    #Rss: /atom.xml
+
+menu_sub:
+    "About us": /about-us
+    "Contact us": /contact-us
     #Rss: /atom.xml
 
 favicon: /images/favicon.png
@@ -21,4 +27,4 @@ ga: UA-65933410-1
 startyear: 2016
 
 # Quote for admonition
-quote: Join our mailing list to hear updates on the conference
+quote: Join our mailing list to hear updates
