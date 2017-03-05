@@ -1,5 +1,16 @@
 mixin sidebar()
     aside.sidebar
+        .slideshare
+            .slideshare-heading
+                span
+                    | Speech Slides
+            ul.slideshare-list
+                - for (i in site.data.slides) {
+                    - var item = site.data.slides[i];
+                    li
+                        a(href ="" + item.url)
+                            != item.title
+                - }
         .twitter-timeline
             .twitter-heading
                 span

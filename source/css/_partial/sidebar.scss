@@ -1,5 +1,6 @@
 aside.sidebar {
     margin-left: 40px;
+    .slideshare-heading,
     .twitter-heading {
         span{
             display: block;
@@ -11,6 +12,14 @@ aside.sidebar {
             color: $c00;
             border-bottom: 1px solid rgba(15,70,100,.12);
             width: calc(100% - 20px);
+        }
+    }
+
+    .slideshare {
+        ul.slideshare-list {
+            li {
+                margin: 10px 20px;
+            }
         }
     }
 
