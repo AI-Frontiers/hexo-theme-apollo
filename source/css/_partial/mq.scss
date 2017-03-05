@@ -6,7 +6,6 @@ $max-width: 1400px;
         margin: auto;
         margin-top: 2em;
         max-width: $max-width;
-
         width: calc(100% - 40px);
         justify-content: space-between;
     }
@@ -119,6 +118,9 @@ $max-width: 1400px;
         width: 100%;
         margin: 0 auto;
     }
+    .nav-sub {
+        display: none;
+    }
     .videos {
         .videos-heading {
             border-left: $c11 5px solid;
@@ -137,9 +139,6 @@ $max-width: 1400px;
                 height: 280px;
                 max-width: 90%;
             }
-        }
-        #video2 {
-            display: none;
         }
     }
 
@@ -233,9 +232,6 @@ $max-width: 1400px;
         text-align: center;
         font-size: 24px;
         margin-bottom:0;
-    }
-    #video2 {
-        display: none;
     }
 
     main.container {
