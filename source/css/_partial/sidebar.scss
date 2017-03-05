@@ -2,7 +2,7 @@ aside.sidebar {
     margin-left: 40px;
     .slideshare-heading,
     .twitter-heading {
-        span{
+        span {
             display: block;
             padding: 10px;
             font-family: Roboto, "Segoe UI", Calibri, sans-serif;
@@ -12,6 +12,10 @@ aside.sidebar {
             color: $c00;
             border-bottom: 1px solid rgba(15,70,100,.12);
             width: calc(100% - 20px);
+            .more {
+                font-size: 16px;
+                float: right;
+            }
         }
     }
 

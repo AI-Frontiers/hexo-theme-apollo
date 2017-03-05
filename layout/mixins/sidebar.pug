@@ -4,6 +4,8 @@ mixin sidebar()
             .slideshare-heading
                 span
                     | Speech Slides
+                    a.more(href="https://www.slideshare.net/AIFrontiers/presentations")
+                        | more
             ul.slideshare-list
                 - for (i in site.data.slides) {
                     - var item = site.data.slides[i];
