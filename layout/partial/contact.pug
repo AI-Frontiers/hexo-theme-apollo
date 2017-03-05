@@ -1,0 +1,7 @@
+.contact
+    form(method='POST', action='https://formspree.io/mgeywrqm')
+        input(type='email', name='_replyto', placeholder='Your email', value='jimzenn@aifrontiers.com', required='')
+        textarea(name='message', rows='5', placeholder='Your message', required='')
+        input(type='text', name='_gotcha', style='display:none')
+        input(type='hidden', name='_format', value='plain', style='display:none')
+        button(type='submit') Send
