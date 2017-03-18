@@ -23,6 +23,14 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+.wrap {
+    width: 100%;
+}
+
+main.container {
+    display: flex;
+}
+
 ul.nav {
     list-style-type: none;
 }

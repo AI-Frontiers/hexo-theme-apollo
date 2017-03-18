@@ -7,20 +7,20 @@ menu_main:
     #Rss: /atom.xml
 
 menu_sub:
-    "About us": /about
-    "Contact us": /contact
+    "About": /about
+    "Contact Us": /contact
     #Rss: /atom.xml
 
 favicon: /images/favicon.png
 logo: /images/logo.png
 
 # Comment
-disqus:
-duoshuo:
+# disqus:
+# duoshuo:
 
 # Analytics
 # google-analytics:
-#ga:
+ga: UA-88635436-2
 
 # Copyright Infomation
 startyear: 2016

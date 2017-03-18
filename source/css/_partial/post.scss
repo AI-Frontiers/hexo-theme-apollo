@@ -1,13 +1,12 @@
 .post {
-    padding-top: 1em;
+    padding-top: 40px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 840px;
 }
 
 .headerlink {
     display: none;
-}
-
-.container {
-    min-height: calc(100vh - 310px);  // 208px stands for the height of header & fooder
 }
 
 .post-block {
