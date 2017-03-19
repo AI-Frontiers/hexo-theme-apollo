@@ -70,6 +70,7 @@
         input.email {
             background: $c11;
             box-sizing: border-box;
+            border-radius: 0!important;
             padding: 0 15px;
             width: 100%;
             transition: all .2s ease-out;
@@ -88,6 +89,7 @@
         }
         input.button {
             height: 40px;
+            border-radius: 0!important;
             font-family: "Roboto Condensed";
             box-sizing: border-box;
             padding: 4px 12px;
