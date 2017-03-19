@@ -13,7 +13,7 @@ mixin videos()
                 - } else {
                     .slide
                         iframe(src="https://www.youtube.com/embed/" + tmpId,frameborder="0",allowfullscreen)
-                        iframe(src="https://www.youtube.com/embed/" + item.id,frameborder="0",allowfullscreen)
+                        iframe.video-hide(src="https://www.youtube.com/embed/" + item.id,frameborder="0",allowfullscreen)
                 - }
             - }
 

@@ -128,6 +128,9 @@ $max-width: 1400px;
     }
 
     .jumbotron {
+        .video-hide {
+            display: none;
+        }
         .videos-heading {
             border-left: $c11 5px solid;
             padding-left: 15px;
@@ -214,6 +217,9 @@ $max-width: 1400px;
 @media screen and (max-width: 700px) {
     .videos {
         flex-direction: column;
+    }
+    .video-hide {
+        display: none;
     }
     .videos-heading {
         width: 80%;
