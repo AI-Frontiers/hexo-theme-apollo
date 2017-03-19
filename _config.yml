@@ -2,8 +2,8 @@ menu_main:
     #Jobs: /jobs
     #Archive: /archives/
     "2017 conference": https://www.aifrontiers.com/2017
-    Videos: https://www.youtube.com/playlist?list=PLnESksJKWdhg4EDJOjvqAizhgz3XCnCuU
-    Slides: https://www.slideshare.net/AIFrontiers/presentations
+    "Videos": https://goo.gl/XvQs2S
+    "Slides": https://goo.gl/CRzo7W
     #Rss: /atom.xml
 
 menu_sub:

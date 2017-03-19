@@ -4,13 +4,13 @@ mixin sidebar()
             .slideshare-heading
                 span
                     | Speech Slides
-                    a.more(href="https://www.slideshare.net/AIFrontiers/presentations")
+                    a.more(href="https://www.slideshare.net/AIFrontiers/presentations" onclick="trackOutboundLink('https://www.slideshare.net/AIFrontiers/presentations')")
                         | more
             ul.slideshare-list
                 - for (i in site.data.slides) {
                     - var item = site.data.slides[i];
                     li
-                        a(href ="" + item.url)
+                        a(href=url_for(item.url), onclick="trackOutboundLink('"+item.url+"')")
                             != item.title
                 - }
         .twitter-timeline
